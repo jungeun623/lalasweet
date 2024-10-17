@@ -1,0 +1,811 @@
+@charset "utf-8";
+/* 캐릭터 소개영역 */
+.lala-intro {
+  /* background-color: white; */
+  width: 80%;
+  height: 80%;
+  border-radius: 5px;
+  margin: 0 auto;
+  /* margin: 0 10%; */
+  padding-top: 20px;
+}
+.lala-in {
+  width: 100%;
+  height: 100%;
+  margin: 20% auto;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  gap: 4%;
+  /* justify-content: space-evenly; */
+  align-items: center;
+}
+/* .lala-in img {
+  width: 20%;
+  height: 20%;
+} */
+.lala-in img {
+  width: 400px;
+  height: auto;
+}
+
+.lala-in p {
+  /* width: 30%;
+  height: 40%;
+  padding: 30px; */
+  font-size: 2.8rem;
+  line-height: 4.3rem;
+  font-family: "Jua", sans-serif;
+  font-weight: 100;
+  /* font-family: "Gowun Dodum", sans-serif;
+  font-weight: 400; */
+  text-align: center;
+  letter-spacing: 1.1px;
+}
+
+/* 말풍선 */
+.balloon {
+  display: inline-block;
+  position: relative;
+  background: #ffffff;
+  border: 8px dashed rgb(174, 202, 255);
+  height: 30%;
+  width: 50%;
+  padding: 2%;
+  z-index: 1;
+  /* margin: 0 auto 10px; */
+  border-radius: 10px;
+}
+
+.balloon:before {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  z-index: 0;
+  /* background: #ffffff; */
+  bottom: -20px;
+  left: 50px;
+}
+.balloon:after {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  z-index: -2;
+  /* background: #ccc; */
+  bottom: -15px;
+  left: 35px;
+}
+
+/* 반응형(캐릭터 소개영역) */
+@media screen and (max-width: 1110px) {
+  .lala-intro {
+    /* background-color: white; */
+    /* width: 70%; */
+    /* height: 70%; */
+    border-radius: 5px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .lala-in img {
+    width: 40%;
+    /* height: 30%; */
+  }
+
+  .lala-in p {
+    /* width: 30%;
+    height: 40%;
+    padding: 30px; */
+    font-size: 2.4rem;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+  }
+
+  /* 말풍선 */
+  .balloon {
+    display: inline-block;
+    position: relative;
+
+    height: 30%;
+    width: 50%;
+    padding: 2%;
+    z-index: 1;
+    /* margin: 0 auto 10px; */
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .lala-intro {
+    /* background-color: white; */
+    width: 70%;
+    height: 70%;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .lala-in img {
+    /* transform: rotate('30deg'); */
+    transform: translateY(30px);
+    /* transform: rotateZ('10deg') */
+    width: 50%;
+    /* height: 30%; */
+    padding-bottom: 10px;
+  }
+  .lala-in {
+    display: flex;
+    flex-direction: column;
+  }
+  .lala-in p {
+    /* width: 30%;
+    height: 40%;
+    padding: 30px; */
+    font-size: 2.4rem;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    text-align: center;
+  }
+
+  /* 말풍선 */
+  .balloon {
+    display: inline-block;
+    position: relative;
+    /* background: #ccc; */
+    height: 30%;
+    width: 70%;
+    padding: 2%;
+    z-index: 1;
+    /* margin: 0 auto 10px; */
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .lala-intro {
+    /* background-color: white; */
+    width: 70%;
+    height: 70%;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .lala-in img {
+    width: 70%;
+    /* height: 30%; */
+    padding-bottom: 10px;
+  }
+  .lala-in {
+    display: flex;
+    flex-direction: column;
+  }
+  .lala-in p {
+    /* width: 30%;
+    height: 40%;
+    padding: 30px; */
+    font-size: 2.3rem;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    text-align: center;
+  }
+
+
+  /* 말풍선 */
+  .balloon {
+    /* display: inline-block; */
+    /* position: relative; */
+    /* background: #ccc; */
+    height: 30%;
+    width: 100%;
+    padding: 2%;
+    z-index: 1;
+    /* margin: 0 auto 10px; */
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .lala-intro {
+    /* background-color: white; */
+    width: 70%;
+    height: 70%;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .lala-in img {
+    /* width: 50%;
+    height: 30%; */
+    padding-bottom: 10px;
+  }
+  .lala-in {
+    display: flex;
+    flex-direction: column;
+  }
+  .lala-in p {
+    /* width: 30%;
+    height: 40%;
+    padding: 30px; */
+    font-size: 2rem;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    text-align: center;
+    word-break: keep-all;
+    
+  }
+
+  /* 말풍선 */
+  .balloon {
+    /* display: inline-block; */
+    /* position: relative; */
+    /* background: #ccc; */
+    height: 40%;
+    width: 100%;
+    padding: 2%;
+    z-index: 1;
+    /* margin: 0 auto 10px; */
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .lala-in p {
+    /* width: 30%;
+    height: 40%;
+    padding: 30px; */
+    font-size: 2rem;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    text-align: center;
+    word-break: keep-all;
+  }
+  .balloon br {
+    display: none;
+  }
+}
+
+/* 브랜드 소개영역 */
+.brand {
+  /* padding: 20%; */
+  width: 100%;
+  height: 300px;
+  max-width: 1300px;
+  background-color: aquamarine;
+  height: 100%;
+  background: url(../images/brand/produce.jpg) no-repeat right;
+  background-size: cover;
+  margin: 8% auto;
+  border-radius: 25px;
+}
+.brand-intro {
+  display: flex;
+  flex-direction: column;
+  /* padding: 10px 10px; */
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+}
+.brand-intro p {
+  font-family: "Jua", sans-serif;
+  font-style: normal;
+  font-size: 3.8rem;
+  color: rgb(235, 167, 167);
+  text-shadow: 2px 2px 2px rgba(56, 56, 56, 0.3);
+  padding: 20px 0;
+}
+.brand-intro span {
+  width: 100%;
+  height: auto;
+  color: beige;
+  font-family: "Jua", sans-serif;
+  font-style: normal;
+  font-size: 3rem;
+  font-weight: lighter;
+  /* padding: 30px 0; */
+  letter-spacing: 1.2px;
+  margin-bottom: 10px;
+}
+
+.brand-intro span strong{
+  color: rgb(255, 179, 64);
+  font-size: 36px;
+  text-shadow: 2px 2px 9px rgba(36, 36, 36, 0.3);
+  font-weight: lighter;
+}
+
+
+
+/* 반응형(브랜드 소개영역) */
+@media screen and (max-width: 1110px) {
+  .brand {
+    /* padding: 20%; */
+    width: 100%;
+    height: 300px;
+    max-width: 1300px;
+    height: 100%;
+    background: url(../images/brand/produce.jpg) no-repeat right;
+    background-size: cover;
+    margin: 8% auto;
+    border-radius: 25px;
+  }
+  .brand-intro {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .brand-intro p {
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 3.5rem;
+    color: rgb(235, 167, 167);
+    padding-top: 30px;
+  }
+  .brand-intro span {
+    width: 100%;
+    height: auto;
+    color: beige;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .brand {
+    width: 80%;
+    height: 1000px;
+    background: url(../images/brand/produce_mb2.jpg) no-repeat bottom right;
+    background-size: cover;
+    margin: 8% auto;
+    border-radius: 25px;
+  }
+  .brand-intro {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .brand-intro p {
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 3.5rem;
+    color: rgb(235, 167, 167);
+    padding-top: 30px;
+  }
+  .brand-intro span {
+    width: 100%;
+    height: auto;
+    color: beige;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .brand {
+    width: 80%;
+    /* height: 1000px; */
+    height: 800px;
+    background: url(../images/brand/produce_mobi.jpg) no-repeat bottom right;
+    background-size: cover;
+    margin: 8% auto;
+    border-radius: 25px;
+  }
+  .brand-intro {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .brand-intro p {
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 3.3rem;
+    color: rgb(235, 167, 167);
+    padding-top: 30px;
+  }
+  .brand-intro span {
+    width: 100%;
+    height: auto;
+    color: beige;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 2.7rem;
+  }
+
+  .brand-intro span strong{
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .brand {
+    width: 80%;
+    /* height: 950px; */
+    background: url(../images/brand/produce_mobi.jpg) no-repeat right;
+    background-size: cover;
+    border-radius: 25px;
+  }
+  .brand-intro {
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px 0px; */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .brand-intro p {
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 3.3rem;
+    color: rgb(235, 167, 167);
+    padding-top: 30px;
+  }
+  .brand-intro span {
+    width: 100%;
+    height: auto;
+    color: beige;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 2.6rem;
+  }
+}
+@media screen and (max-width: 586px) {
+  .brand {
+    width: 80%;
+    height: 850px;
+    background: url(../images/brand/produce_mobi.jpg) no-repeat right;
+    background-size: cover;
+    border-radius: 25px;
+  }
+  .brand-intro {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .brand-intro p {
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    /* font-size: 2.7rem; */
+    color: rgb(235, 167, 167);
+    padding-top: 30px;
+    word-break: keep-all;
+  }
+  .brand-intro span {
+    width: 100%;
+    height: auto;
+    color: beige;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    word-break: keep-all;
+    /* font-size: 2rem; */
+  }
+  .brand-intro br {
+    display: none;
+  }
+
+  .brand-intro span strong{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .brand {
+    width: 80%;
+    height: 900px;
+    background: url(../images/brand/produce_mobi.jpg) no-repeat right;
+    background-size: cover;
+    border-radius: 25px;
+  }
+  .brand-intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .brand-intro p {
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 3rem;
+    color: rgb(235, 167, 167);
+    padding-top: 30px;
+  }
+  .brand-intro span {
+    width: 100%;
+    height: auto;
+    color: beige;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 2.4rem;
+  }
+
+}
+@media screen and (max-width: 437px) {
+  .brand {
+    width: 80%;
+    height: 850px;
+    background: url(../images/brand/produce_mobi.jpg) no-repeat right;
+    background-position: right center;
+    background-size: cover;
+    border-radius: 25px;
+  }
+  .brand-intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .brand-intro p {
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 3rem;
+    color: rgb(235, 167, 167);
+    padding-top: 30px;
+  }
+  .brand-intro span {
+    width: 100%;
+    height: auto;
+    color: beige;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 2.1rem;
+  }
+
+  .brand-intro span strong{
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .brand {
+    width: 80%;
+    height: 750px;
+    background: url(../images/brand/produce_mobi.jpg) no-repeat right;
+    background-size: cover;
+    border-radius: 25px;
+  }
+  .brand-intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .brand-intro p {
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 2.3rem;
+    color: rgb(235, 167, 167);
+    padding-top: 30px;
+  }
+  .brand-intro span {
+    width: 100%;
+    height: auto;
+    color: beige;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 1.8rem;
+  }
+
+  .brand-intro span strong{
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .brand {
+    width: 85%;
+    height: 750px;
+    background: url(../images/brand/produce_320.jpg) no-repeat right;
+    background-size: cover;
+    border-radius: 25px;
+  }
+}
+
+/* 브랜드 매출 영역 */
+.brand-output {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* 가운데 정렬 */
+  width: 85%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.brand-image-output {
+  /* background-color: aqua; */
+  position: relative;
+  width: 65%; /* 화면 크기에 맞게 조정 */
+  height: auto;
+  /* margin: 20px; */
+}
+
+
+.brand-output img {
+  display: block;
+  width: 100%; /* 화면 크기에 맞게 조정 */
+}
+
+.brand-image-output .color1,
+.brand-image-output .color2,
+.brand-image-output .color3 {
+  position: absolute;
+  font-size: 1.8vw; /* 화면 크기에 맞게 조정 */
+  font-weight: bold;
+  font-family: "Jua", sans-serif;
+
+}
+
+.color1 {
+  color: rgb(224, 55, 55);
+  left: 19%;
+  bottom: 30%;
+  transform: translate(-50%, 50%); /* 정중앙으로 위치 조정 */
+}
+
+.color2 {
+  color: rgb(196, 32, 32);
+  left: 42%;
+  bottom: 59%;
+  transform: translate(-50%, 50%); /* 정중앙으로 위치 조정 */
+}
+
+.color3 {
+  color: rgb(148, 19, 19);
+  left: 65%; /* 위치 조정 */
+  bottom: 70%;
+  transform: translate(-50%, 50%); /* 정중앙으로 위치 조정 */
+}
+
+.brand-image-output2{
+  display: none;
+}
+
+.brand-image-output2 .color1,
+.brand-image-output2 .color2,
+.brand-image-output2 .color3 {
+  display: none;
+  position: absolute;
+  font-size: 2vw; /* 화면 크기에 맞게 조정 */
+  font-weight: bold;
+  font-family: "Jua", sans-serif;
+  /* opacity: 0;  */
+  /* transition: opacity 1s ease-in-out;  */
+  
+}
+
+
+.show {
+  opacity: 1; /* 클래스가 추가되면 보이도록 설정 */
+}
+
+.output-news {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  /* opacity: 0; 
+  transition: opacity 1s ease-in-out;  */
+}
+
+.output-news.show {
+  opacity: 1; /* 클래스가 추가되면 보이도록 설정 */
+}
+
+.output-news p {
+  width: 100%;
+  font-family: "Jua", sans-serif;
+  font-size: 2.3vw;
+  line-height: 1.8;
+  padding: 10px;
+  /* margin-bottom: 15px; */
+  color: #333;
+  opacity: 1; /* 이 속성은 .show 클래스로 변경하지 않습니다. */
+}
+
+.color4 {
+  color: rgb(72, 75, 255);
+  text-shadow: 2px 2px 5px rgba(56, 56, 56, 0.3);
+}
+
+/* 반응형(브랜드 매출 영역) */
+@media screen and (max-width: 1000px) {
+  .brand-output {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* width: 85%; */
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    margin: 0 auto;
+  }
+
+  .brand-image-output {
+    /* background-color: aqua; */
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .brand-image-output .color1,
+  .brand-image-output .color2,
+  .brand-image-output .color3 {
+    font-size: 2.7vw;
+  }
+
+  .output-news p {
+    font-size: 3vw;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .brand-image-output {
+    display: none;
+  }
+  .brand-image-output .color1,
+  .brand-image-output .color2,
+  .brand-image-output .color3 {
+    display: none;
+  }
+  
+  .brand-image-output2{
+    width: 80%;
+    height: auto;
+    display: block;
+    position: relative;
+  }
+  .brand-image-output2 img{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .brand-image-output2 .color1,
+  .brand-image-output2 .color2,
+  .brand-image-output2 .color3 {
+    display: block;
+    position: absolute;
+    font-size: 2.8vw; /* 화면 크기에 맞게 조정 */
+    font-weight: bold;
+    font-family: "Jua", sans-serif;
+
+
+  }
+
+
+
+}
+@media screen and (max-width: 700px) {
+  .output-news p {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .brand-image-output2 {
+    width: 95%;
+  }
+  .output-news p {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .output-news p {
+    font-size: 3.7vw;
+  }
+}
+@media screen and (max-width: 350px) {
+  .output-news p {
+    font-size: 3.5vw;
+  }
+}

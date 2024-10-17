@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+
+#container{
+    display: flex;
+    /* display: none; */
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /* top: 82%;
+    left: -10%; */
+    font-size: 20px;
+    width: 300px;
+    gap: 15px;
+    border: 2px solid #333;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #fff;
+    z-index: 999;
+    font-family: "Noto Sans KR", sans-serif;
+    
+    /* color: #333; */
+  }
+  
+  
+        fieldset {
+          margin-bottom: 20px;
+          border: 1px solid #b6b5b5;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 4px;
+        }
+  
+        fieldset:last-child{
+          border: none;
+        }
+  
+        legend{
+          font-size: 16px;
+          font-weight: bold;
+        }
+  
+        #total {
+          border: none;
+          font-size: 16px;
+          font-weight: bold;
+          border: 1px solid #333;
+          border-radius: 8px;
+          padding: 5px;
+          margin-top: 15px;
+        }
+  
+  
+    label{
+    display: block;
+    /* background-color: blueviolet; */
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    color: #333;
+    font-weight: bold;
+    border: 2px solid #333;
+    background-color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 3px;
+    cursor: pointer;
+    /* padding-right: 10px; */
+    /* margin-right: 20px; */
+    /* font-family: "Noto Sans KR", sans-serif; */
+    
+  }
+
+  .menu-select br{
+    /* display: none; */
+  }
+  
+  .sideItem{
+    font-size: 15px;
+    font-weight: bold;
+    color: navy;
+    margin: 4px;
+  }
+
+  .sand{
+    display: none;
+  }
+
+  .total-container{
+    width: 300px;
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    /* bottom: 10px;
+    left: 10px; */
+    z-index: 9999999;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #333;
+    background-color: #fff;
+    /* padding: 50%; */
+  }
+
+  /* 체크박스 숨기기 */
+input[type="checkbox"] {
+  display: none;
+}
